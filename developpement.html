@@ -34,6 +34,7 @@
 			<li><a href="#crm">CRM avec back-end sécurisée </a></li>
 			<li><a href="#api_rest">API sécurisée RESTFUL</a></li>
 			<li><a href="#LITReview">Application Django</a></li>
+			<li><a href="#streaming_video">Interface front de streaming</a></li>
 		</ul>
 
 	</nav>
@@ -297,6 +298,55 @@
 						</div>
 					</div>
 				</p>
+			</div>
+			<div class="anchor" id="streaming_video">
+				<h1>Interface front pour une application Django de streaming vidéo</h1>
+				<div class="tag">
+					<p>#JavascriptVanilla</p>
+					<p>#HTML</p>
+					<p>#CSS</p>
+				</div>
+				<a href="https://github.com/lcourdes/Interface-utilisateur-pour-une-application-web-Python"><img class="github_icone" src="images//github.png" alt="Icone Github"/> Lien Github</a><br>
+
+				<p class="no_indent">Description :<br>
+					L’association (fictive) JustStreamIt est connue pour ses newsletters de classement de films. Ces classements ont sauvé bien des soirées à ses abonnés toujours plus nombreux, comme le dit leur slogan : “Tu ne sais pas quoi regarder pour passer une bonne soirée ? Alors JustStreamIt”.<br>
+					L’association souhaite se doter d’une application web permettant de visualiser en temps réel un classement de films intéressants. 
+				</p>
+				<p class="no_indent">Exigences :</p>
+					<div id="list">
+					<ul>
+						<li>Récupérer les données des films de l'API à l'aide de requêtes ajax.</li>
+						<li>L'interface doit comprendre plusieurs zones :</li>
+							<ul>
+								<li>Meilleur film : Cette zone affiche la photo du film qui a la meilleur note Imdb toutes catégories confondues, ainsi que son titre, un bouton et le résumé du film sous le bouton.</li>
+								<li>Films les mieux notés : Cette zone affiche les 7 autres films les mieux notés toutes catégories confondues. On pourra les faire défiler avec une flèche à gauche et à droite comme sur la maquette pour tous les parcourir.</li>
+								<li>Catégorie 1 : Montre les 7 films les mieux notés d’une catégorie donnée.</li>
+								<li>Catégorie 2 : Montre les 7 films les mieux notés d’une autre catégorie.</li>
+								<li>Catégorie 3 : Montre les 7 films les mieux notés d’une autre catégorie.</li>
+							</ul>
+						<li>La disposition doit suivre la proposition des wireframes proposées.</li>
+						<div class="my_images">
+							<img class="image" src="images//developpement//streaming//maquette.png" alt="Maquette de design" />
+						</div>
+						<li>Lorsque l'on clique sur le bouton du film vedette ou sur l'image d'un des films une fenêtre modale s'ouvre. Dans cette fenêtre, les métadonnées du film doivent être présentes.</li>
+						<li>Utiliser Vanilla Javascript pour gérer les événements de la page web.</li>
+					</ul>
+					</div>
+				<p class="no_indent no_padding_bottom">Aperçu :</p>
+					<div id="streaming" class="carousel">
+						<div class="navigation-button">
+							<span class="dot active" onclick="changeSlide(0, 'streaming')"></span>
+							<span class="dot" onclick="changeSlide(1, 'streaming')"></span>
+							<span class="dot" onclick="changeSlide(2, 'streaming')"></span>
+							<span class="dot" onclick="changeSlide(3, 'streaming')"></span>
+						</div>
+						<div class="slider">
+							<img src="images//developpement//streaming//JustStreamIt_webPage.png" alt="">
+							<img src="images//developpement//streaming//JustStreamIt_modale.png" alt="">
+							<img src="images//developpement//streaming//catégorie_1.png" alt="">
+							<img src="images//developpement//streaming//catégorie_1_to_right.png" alt="">
+						</div>
+					</div>
 			</div>
 		</article>
 	</section>
