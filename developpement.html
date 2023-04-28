@@ -8,7 +8,175 @@
 </head>
 <body>
 <div id="bloc_page_classic">
-	<h1>En travaux</h1>
+	<header id="header_classic">
+		<div id="header_classic_div">
+			<h1>Léa Courdès</h1>
+			<div id="menu_line"> 
+				<div class="espace"></div>
+				<div id="menu">
+					<nav>
+						<ul>
+							<li><a href="index.html">Accueil</a></li>
+							<li class="selected_page">Développement</li>
+							<li><a href="formation.html">Formation</a></li>
+							<li><a href="experiences.html">Expériences</a></li>
+							<li><a href="recherches.html">Recherche</a></li>
+							<li><a href="enseignements.html">Enseignements</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<nav id="left_menu">
+		<ul>
+			<li><a href="#pipeline">Pipeline CI/CD</a></li>
+			<li><a href="#LITReview">Application Django</a></li>
+		</ul>
+
+	</nav>
+	<section id="corps">
+		<div class="espace"></div>
+		<article>
+			<h1>En travaux</h1>
+			<p></p>
+			<div class="anchor" id="pipeline">
+				<h1>Pipeline CI/CD d'une application Django</h1>
+				<div class="tag">
+					<p>#Python</p>
+					<p>#PEP8</p>
+					<p>#flake8</p>
+					<p>#pytest</p>
+					<p>#Django</p>
+					<p>#ORM</p>
+					<p>#SQLite</p>
+					<p>#Gunicorn</p>
+					<p>#Docker</p>
+					<p>#GithubActions</p>
+					<p>#AWS</p>
+					<p>#EC2</p>
+					<p>#nginx</p>
+					<p>#Certbot</p>
+					<p>#Sentry</p>
+					<p>#Bash</p>
+				</div>
+				<a href="https://github.com/lcourdes/Python-OC-Lettings"><img class="github_icone" src="images//github.png" alt="Icone Github"/> Lien Github</a><br>
+
+				<p class="no_indent">Description :<br>
+					Ce projet (fictif) a pour objectif d'améliorer une application Django déjà existante de la start-up Orange County Letting qui opère dans le secteur de biens immobiliers.
+				</p>
+				<p class="no_indent">Exigences :</p>
+					<div id="list">
+					<ul>
+						<li>Réductions de diverses dettes techniques.</li>
+						<li>Refonte de l'application pour proposer une architecture modulaire.</li>
+							<ul>
+								<li>Diviser l'application originelle en trois applications distinctes.</li>
+								<li>Utiliser les migrations/requêtes SQL pour créer de nouvelles tables.</li>
+								<li>Remplir les nouvelles tables avec les données déjà existantes dans la base de données.</li>
+								<li>Développer la suite de tests en écrivant des tests unitaires pour chacune des vues.</li>
+							</ul>
+						<li>Créer une Pipeline CI/CD et déployer l'application.</li>
+							<ul>
+								<li>La pipeline est gérée par Github Action.</li>
+								<li>Un push sur n'importe quelle branche déclenche le linting (flake8) et des tests de non régression.</li>
+								<li>Un push sur la branche main démarre un travail de conteneurisation. Une image Docker de l'application est construite et est poussée vers un registre du Docker Hub</li>
+								<li>Après la conteneurisation, un push sur la branche main déclenche le déploiement. La mise en production est proposée sur une instance EC2 D'AWS. Nginx a été configuré sur l'instance et un certificat SSL est disponible pour l'application de sorte que le protocole HTTPS est géré.</li>
+							</ul>
+						<li>Mettre en place un suivi des erreurs avec Sentry.</li>
+					</ul>
+					</div>
+					<div id="lettings" class="carousel">
+						<div class="navigation-button">
+							<span class="dot active" onclick="changeSlide(0, 'lettings')"></span>
+							<span class="dot" onclick="changeSlide(1, 'lettings')"></span>
+							<span class="dot" onclick="changeSlide(2, 'lettings')"></span>
+							<span class="dot" onclick="changeSlide(3, 'lettings')"></span>
+						</div>
+						<div class="slider">
+							<img src="images//developpement//lettings//migration.png" alt="Exemple de migration">
+							<img src="images//developpement//lettings//workflow.png" alt="Début de la pipeline Github Actions">
+							<img src="images//developpement//lettings//docker_hub.png" alt="Stock d'images dans le Docker Hub">
+							<img src="images//developpement//lettings//aws.png" alt="Console de l'instance EC2 d'AWS">
+						</div>
+					</div>
+			</div>
+			<div class="anchor" id="LITReview">
+				<h1>Application Django modularisée</h1>
+				<div class="tag">
+					<p>#Python</p>
+					<p>#PEP8</p>
+					<p>#Django</p>
+					<p>#ORM</p>
+					<p>#SQLite</p>
+					<p>#HTML</p>
+					<p>#CSS</p>
+				</div>
+				<a href="https://github.com/lcourdes/Developpez-une-application-Web-en-utilisant-django"><img class="github_icone" src="images//github.png" alt="Icone Github"/> Lien Github</a><br>
+
+				<p class="no_indent">Description :<br>
+					Ce projet (fictif) a pour objectif de répondre à la demande de MVP de la startup LITReview qui souhaite commercialiser un produit permettant à une communauté d'utilisateurs de consulter ou de solliciter une critique de livres à la demande.<br>
+					L'application doit permettre de demander des critiques de livres ou d'articles en créant un ticket, mais également de publier des critiques de livres ou d'articles.
+				</p>
+				<p class="no_indent">Exigences :</p>
+					<div id="list">
+					<ul>
+						<li>
+							La disposition doit suivre la proposition des wireframes proposées.
+						</li>
+						<div id="wireframes_LITReview" class="carousel">
+							<div class="navigation-button">
+								<span class="dot active" onclick="changeSlide(0, 'wireframes_LITReview')"></span>
+								<span class="dot" onclick="changeSlide(1, 'wireframes_LITReview')"></span>
+								<span class="dot" onclick="changeSlide(2, 'wireframes_LITReview')"></span>
+								<span class="dot" onclick="changeSlide(3, 'wireframes_LITReview')"></span>
+							</div>
+							<div class="slider">
+								<img src="images//developpement//LITReview//WF-authentification-accueil.png" alt="">
+								<img src="images//developpement//LITReview//WF-authentification-inscription.png" alt="">
+								<img src="images//developpement//LITReview//WF-flux.png" alt="">
+								<img src="images//developpement//LITReview//WF-flux-critique.png" alt="">
+							</div>
+						</div>
+						<li>L'interface doit restée propre et minimale.</li>
+						<li>Un utilisateur doit pouvoir :
+							<ul>
+								<li>se connecter et s'inscrire. Le site ne doit pas être accessible à un utilisateur non connecté&nbsp;;</li>
+								<li>consulter un flux contenant les derniers tickets et les commentaires des utilisateurs qu'il suit, classés par ordre chronologique, les plus récents en premier&nbsp;;</li>
+								<li>créer de nouveaux tickets pour demander une critique sur un livre/article&nbsp;;</li>
+								<li>créer des critiques qui ne sont pas en réponse à un ticket. Dans le cadre d'un processus en une étape, l'utilisateur créera un ticket puis un commentaire en réponse à son propre ticket&nbsp;;</li>
+								<li>voir, modifier et supprimer ses propres tickets et commentaires&nbsp;;</li>
+								<li>suivre les autres utilisateurs&nbsp;;</li>
+								<li>voir qui il suit et suivre qui il veut&nbsp;;</li>
+								<li>cesser de suivre un utilisateur.</li>
+							</ul>
+						</li>
+					</ul>
+					</div>
+
+				<p class="no_indent no_padding_bottom">Aperçu de l'interface utilisateur :
+					<div id="my_LITReview" class="carousel">
+						<div class="navigation-button">
+							<span class="dot active" onclick="changeSlide(0, 'my_LITReview')"></span>
+							<span class="dot" onclick="changeSlide(1, 'my_LITReview')"></span>
+							<span class="dot" onclick="changeSlide(2, 'my_LITReview')"></span>
+							<span class="dot" onclick="changeSlide(3, 'my_LITReview')"></span>
+							<span class="dot" onclick="changeSlide(4, 'my_LITReview')"></span>
+							<span class="dot" onclick="changeSlide(5, 'my_LITReview')"></span>
+						</div>
+						<div class="slider">
+							<img src="images//developpement//LITReview//authentification-accueil.png" alt="">
+							<img src="images//developpement//LITReview//authentification-inscription.png" alt="">
+							<img src="images//developpement//LITReview//flux.png" alt="">
+							<img src="images//developpement//LITReview//posts.png" alt="">
+							<img src="images//developpement//LITReview//flux-critique.png" alt="">
+							<img src="images//developpement//LITReview//flux-critique2.png" alt="">
+						</div>
+					</div>
+				</p>
+			</div>
+		</article>
+	</section>
 </div>
 <script src="script.js"></script>
 </body>
