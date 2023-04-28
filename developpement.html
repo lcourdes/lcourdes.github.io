@@ -31,6 +31,7 @@
 	<nav id="left_menu">
 		<ul>
 			<li><a href="#pipeline">Pipeline CI/CD</a></li>
+			<li><a href="#api_rest">API sécurisée RESTFUL</a></li>
 			<li><a href="#LITReview">Application Django</a></li>
 		</ul>
 
@@ -98,6 +99,73 @@
 							<img src="images//developpement//lettings//workflow.png" alt="Début de la pipeline Github Actions">
 							<img src="images//developpement//lettings//docker_hub.png" alt="Stock d'images dans le Docker Hub">
 							<img src="images//developpement//lettings//aws.png" alt="Console de l'instance EC2 d'AWS">
+						</div>
+					</div>
+			</div>
+			<div class="anchor" id="api_rest">
+				<h1>Création d'une API sécurisée RESTFUL avec Django REST</h1>
+				<div class="tag">
+					<p>#Python</p>
+					<p>#PEP8</p>
+					<p>#Django</p>
+					<p>#Django REST</p>
+					<p>#ORM</p>
+					<p>#SQLite</p>
+					<p>#PostMan</p>
+					<p>#JSONWebToken</p>
+					<p>#OWASP</p>
+					<p>#Sentry</p>
+				</div>
+				<a href="https://github.com/lcourdes/Python-OC-Lettings"><img class="github_icone" src="images//github.png" alt="Icone Github"/> Lien Github</a><br>
+				<a href="https://documenter.getpostman.com/view/25647707/2s93CNLYKV"><img class="github_icone" src="images//logo-postman.png" alt="Icone PostMan"/> Lien de la documentation PostMan</a><br>
+				<p class="no_indent">Description :<br>
+					Ce projet (fictif) a pour objectif de répondre à la demande d'une société d'édition de logiciels de développement et de collaboration qui a décidé de publier une application permettant de remonter et suivre des problèmes techniques (issue tracking system). Cette solution s’adresse à des entreprises clientes, en B2B.<br>
+					L'application doit pouvoir exploiter les points de terminaison de l'API qui serviront les données. L'objectif est de créer cette API.
+				</p>
+				<p class="no_indent">Exigences :</p>
+					<div id="list">
+					<ul>
+						<li>L'API REST doit être développée à l'aide du framework Django REST.</li>
+						<li>Les modèles de la base de données doivent suivre le diagramme de classes fourni par le CTO.</li>
+						<div class="my_images">
+							<img class="image" src="images//developpement//api_securisee//diagramme.png" alt="Diagramme de classes" />
+						</div>
+						<li>Créer les routages pour chaque fonctionnalité selon le cahier des charges.</li>
+						<li>Chaque point de terminaison doit renvoyer une réponse de réussite 200 avec les données JSON fournissant tous les détails du sérialiseur.</li>
+						<li>Les points de terminaison doivent être docummentés sur PostMan.</li>
+					</ul>
+					</div>
+				<p class="no_indent">Fonctionnalités attendues :</p>
+					<div id="list">
+					<ul>
+						<li>Les utilisateurs doivent pouvoir s'inscrire et s'authentifier.</li>
+						<li>Les utilisateurs doivent avoir accès aux actions CRUD sur des objets de type <em>project</em>.</li>
+						<li>Chaque projet peut se voir associer des problèmes (<em>issues</em>). L'utilisateur ne doit pouvoir appliquer le processus CRUD que s'il figure sur la liste des contributeurs du projet.</li>
+						<li>Les problèmes peuvent faire l'objet de commentaires (<em>comments</em>) de la part des contributeurs au projet auquel ces problèmes appartiennent.</li>
+						<li>Il est interdit à tout collaborateur d'un projet autre que l'auteur d'effectuer des requêtes d'actualisation ou de suppression d'un projet/problème/commentaire.</li>
+					</ul>
+					</div>
+				<p class="no_indent">Mesures de sécurité OWASP :</p>
+					<div id="list">
+					<ul>
+						<li>Les JSON Web Tokens doivent être utilisés pour le back-end d'authentification.</li>
+						<li>Un utilisateur doit toujours être authentifié pour accéder à une fonctionnalité.</li>
+						<li>Un utilisateur ne doit pas être autorisé à accéder à un projet pour lequel il n'est pas un collaborateur.</li>
+						<li>Chaque ressource nécessite des autorisations spéciales pour les actions d'actualisation et de suppression accessibles uniquement aux auteurs des dites ressources.</li>
+					</ul>
+					</div>
+					<div id="api_securisee" class="carousel">
+						<div class="navigation-button">
+							<span class="dot active" onclick="changeSlide(0, 'api_securisee')"></span>
+							<span class="dot" onclick="changeSlide(1, 'api_securisee')"></span>
+							<span class="dot" onclick="changeSlide(2, 'api_securisee')"></span>
+							<span class="dot" onclick="changeSlide(3, 'api_securisee')"></span>
+						</div>
+						<div class="slider">
+							<img src="images//developpement//api_securisee//endpoints.png" alt="Extrait du résumé des points de terminaison">
+							<img src="images//developpement//api_securisee//postman.png" alt="Aperçu du projet PostMan">
+							<img src="images//developpement//api_securisee//documentation.png" alt="Extrait de la documentation PostMan">
+							<img src="images//developpement//api_securisee//drf_login.png" alt="Page login de Django Rest">
 						</div>
 					</div>
 			</div>

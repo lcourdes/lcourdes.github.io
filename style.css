@@ -376,6 +376,11 @@ header ul li.selected_page{
   	transform: translate(-50%);
 	opacity: 0;
 }
+
+.my_images img {
+	max-width: 90%;
+	max-height: 90%;
+}
   
 .slider img:first-child {
 	z-index: 1;
