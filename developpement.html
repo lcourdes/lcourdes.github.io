@@ -31,6 +31,7 @@
 	<nav id="left_menu">
 		<ul>
 			<li><a href="#pipeline">Pipeline CI/CD</a></li>
+			<li><a href="#crm">CRM avec back-end sécurisée </a></li>
 			<li><a href="#api_rest">API sécurisée RESTFUL</a></li>
 			<li><a href="#LITReview">Application Django</a></li>
 		</ul>
@@ -99,6 +100,60 @@
 							<img src="images//developpement//lettings//workflow.png" alt="Début de la pipeline Github Actions">
 							<img src="images//developpement//lettings//docker_hub.png" alt="Stock d'images dans le Docker Hub">
 							<img src="images//developpement//lettings//aws.png" alt="Console de l'instance EC2 d'AWS">
+						</div>
+					</div>
+			</div>
+			<div class="anchor" id="crm">
+				<h1>Architecturer et développer le back-end sécurisé d'une application de gestion de la relation client (CRM)</h1>
+				<div class="tag">
+					<p>#Python</p>
+					<p>#PEP8</p>
+					<p>#Django</p>
+					<p>#Django REST</p>
+					<p>#ORM</p>
+					<p>#PostgreSQL</p>
+					<p>#PostMan</p>
+					<p>#DjangoCookie</p>
+					<p>#API</p>
+					<p>#DomainDrivenDesign</p>
+				</div>
+				<a href="https://github.com/lcourdes/Django-ORM-backend-securise"><img class="github_icone" src="images//github.png" alt="Icone Github"/> Lien Github</a><br>
+				<a href="https://documenter.getpostman.com/view/25647707/2s93RKzazc"><img class="github_icone" src="images//logo-postman.png" alt="Icone PostMan"/> Lien de la documentation PostMan</a><br>
+				<p class="no_indent">Description :<br>
+					Ce projet (fictif) a pour objectif de créer un système CRM interne à l'entreprise.
+				</p>
+				<p class="no_indent">Exigences :</p>
+					<div id="list">
+					<ul>
+						<li>Créer un diagramme de classes de l'application selon une approche Domain Driven Design.</li>
+						<li>Fournir un ensemble de points de terminaison sécurisé pour l'API à l'aide du framework Django REST.</li>
+						<li>Les points de terminaison doivent être docummentés sur PostMan.</li>
+						<li>Utiliser une base de données PostgreSQL.</li>
+						<li>Définir des groupes de permissions pour les différentes équipes de travail.</li>
+					</ul>
+					</div>
+				<p class="no_indent">Les permissions selon les membres d'équipes:</p>
+					<div id="list">
+					<ul>
+						<li>Les administrateurs utilise le site d'administration Django et peuvent ajouter de nouveaux utilisateurs au système CRM et leur attribuer des autorisations. Ils peuvent afficher et modifier toutes les données dans le système CRM.</li>
+						<li>Les membres de l'équipe de vente peuvent ajouter de nouveaux clients dans le système CRM à mesure qu'ils obtiennent des prospects. Ils peuvent garantir l'exactitude des informations relatives aux clients et les modifier au besoin (notamment pour les convertir en client existant). Ils peuvent créer de nouveaux contrats pour un nouvel événement potentiel. Ce contrat ouvert peut être considéré comme signé. Les utilisateurs peuvent créer un nouvel événement pour un contrat.</li>
+						<li>Les membres de l'équipe de support peuvent afficher et actualiser les informations relatives aux événements qui leur sont attribués. Ils peuvent afficher les informations du client relatives aux événements attribués. Ils peuvent actualiser les informations d'un événement jusqu'à ce qu'il soit terminé.</li>
+					</ul>
+					</div>
+					<div id="crm_securise" class="carousel">
+						<div class="navigation-button">
+							<span class="dot active" onclick="changeSlide(0, 'crm_securise')"></span>
+							<span class="dot" onclick="changeSlide(1, 'crm_securise')"></span>
+							<span class="dot" onclick="changeSlide(2, 'crm_securise')"></span>
+							<span class="dot" onclick="changeSlide(3, 'crm_securise')"></span>
+							<span class="dot" onclick="changeSlide(4, 'crm_securise')"></span>
+						</div>
+						<div class="slider">
+							<img src="images//developpement//crm_securise//diagramme.png" alt="Diagramme du système CRM">
+							<img src="images//developpement//crm_securise//endpoints.png" alt="Extrait du résumé des points de terminaison">
+							<img src="images//developpement//crm_securise//postman.png" alt="Aperçu du projet PostMan">
+							<img src="images//developpement//crm_securise//documentation.png" alt="Extrait de la documentation PostMan">
+							<img src="images//developpement//crm_securise//drf.png" alt="Exemple de page DRF">
 						</div>
 					</div>
 			</div>
