@@ -1,0 +1,406 @@
+/*refaire fenêtre phonometrica*/
+/*icone + lien Github, linkedin*/
+
+@font-face {
+    font-family: 'alex_brushregular';
+    src: url('font//font_alex_brush//alexbrush-regular-webfont.eot');
+    src: url('font//font_alex_brush//alexbrush-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font//font_alex_brush//alexbrush-regular-webfont.woff2') format('woff2'),
+         url('font//font_alex_brush//alexbrush-regular-webfont.woff') format('woff'),
+         url('font//font_alex_brush//alexbrush-regular-webfont.ttf') format('truetype'),
+         url('font//font_alex_brush//alexbrush-regular-webfont.svg#alex_brushregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'baskervvilleregular';
+    src: url('font//font_baskerville//baskervville-regular-webfont.eot');
+    src: url('font//font_baskerville//baskervville-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font//font_baskerville//baskervville-regular-webfont.woff2') format('woff2'),
+         url('font//font_baskerville//baskervville-regular-webfont.woff') format('woff'),
+         url('font//font_baskerville//baskervville-regular-webfont.ttf') format('truetype'),
+         url('font//font_baskerville//baskervville-regular-webfont.svg#baskervvilleregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'baskervvilleitalic';
+    src: url('font//font_baskerville_italic//baskervville-italic-webfont.eot');
+    src: url('font//font_baskerville_italic//baskervville-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font//font_baskerville_italic//baskervville-italic-webfont.woff2') format('woff2'),
+         url('font//font_baskerville_italic//baskervville-italic-webfont.woff') format('woff'),
+         url('font//font_baskerville_italic//baskervville-italic-webfont.ttf') format('truetype'),
+         url('font//font_baskerville_italic//baskervville-italic-webfont.svg#baskervvilleitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p{
+	text-align: justify;
+	font-size: 18px;
+	line-height: 2em;
+}
+
+body{
+	font-family: "baskervilleregular", serif;
+	background: url("images//background07.png") repeat;
+	background-size: 370px;
+	background-attachment: fixed;
+	height: 90%;
+	margin: 0;
+}
+
+footer{
+	position: fixed;
+	bottom: 0px;
+}
+
+footer a{
+	font-size: x-small;
+	color: black;
+	text-decoration: none;
+}
+
+header{
+	z-index: 999;
+}
+
+header h1{
+	font-family: "alex_brushregular", sans-serif;
+	font-size: 80px;
+	font-weight: normal;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	text-shadow: 3px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+header ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+header ul li{
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+header ul li a{
+	color: black;
+	font-size: 19px;
+	text-decoration: none;
+}
+
+header ul li a:hover{
+	text-shadow: 3px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+header ul li.selected_page{
+	color: black;
+	font-size: 19px;
+	font-weight: bold;
+}
+
+/*Accueil*/
+#main_picture{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	margin: 10% 0 5% 0;
+}
+
+#text_accueil{
+	max-width: 600px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#main_picture img{
+	object-fit: contain;
+	max-width: 35%;
+	height: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	filter: drop-shadow(3px 5px 1px rgba(0, 0, 0, 0.2));
+}
+
+#main_title{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#header_accueil{
+	background: url("images//separateur.png") repeat-x bottom;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: flex-end;
+	padding-bottom: 45px;
+}
+
+#header_accueil h1{
+	margin-left: 0;
+}
+
+#a_propos{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+}
+
+#a_propos h1{
+	font-weight: normal;
+	font-size: 40px;
+	font-family: "alex_brushregular", sans-serif;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-shadow: 3px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+/*Pages classiques*/
+
+#header_classic{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: white;
+}
+
+#header_classic_div{
+	background: url("images//background07.png") repeat;
+	background-size: 370px;
+	display: flex;
+	flex-direction: column;
+}
+
+#header_classic h1{
+	margin-top: 0;
+	padding-top: 20px;
+}
+
+.espace{
+	min-width: 199px;
+	max-width: 199px;
+}
+
+#menu_line{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+#menu{
+	flex-grow: 1;
+}
+
+#header_classic li{
+	background: url("images//separateur.png") repeat-x bottom;
+	padding-bottom: 30px;
+}
+
+#corps{
+	margin-top: 200px;
+	display: flex;
+}
+
+#left_menu{
+	background: url("images//separateur2.png") repeat-y right;
+	position: fixed;
+	left: 0px;
+	top: 250px;
+	width: 199px;
+	min-height: 300px;
+	max-height: 800px;
+	display: flex;
+	align-items: center;
+	padding-bottom: 200px;
+	padding-right: 8px;
+}
+
+#left_menu ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+#left_menu ul li{
+	padding: 8px 8px 8px 8px;
+}
+
+#left_menu ul li a{
+	color: black;
+	font-size: 19px;
+	text-decoration: none;
+}
+
+#left_menu ul li a:hover{
+	text-shadow: 3px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+#bloc_page_classic article{
+	padding: 50px 0px 30px 0px;	
+}
+
+#bloc_page_classic article p{
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-bottom: 40px;
+	text-indent: 2em;
+}
+
+#bloc_page_classic article h1{
+	font-weight: 10;
+	font-size: 40px;
+	font-family: "baskervilleitalic", serif;
+	font-style: oblique;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-shadow: 3px 5px 1px rgba(0, 0, 0, 0.1);
+	padding-left: 8px;
+}
+
+#bloc_page_classic article p em{
+	font-family: baskervvilleitalic;
+	font-size: 18px;
+}
+
+.anchor{
+    margin-top: -250px;
+    padding-top: 250px;
+}
+
+.figure{
+	text-align: center;
+	width: 100%;
+	text-shadow: 3px 5px 1px rgba(0, 0, 0, 0.2);
+	font-family: "baskervilleregular", serif;
+	font-size: 19px;
+	margin-top: -30px;
+	padding-bottom: 50px;
+	line-height: 2em;
+}
+
+.image{
+	max-width: 25%;
+	height: auto;
+	filter: drop-shadow(3px 5px 1px rgba(0, 0, 0, 0.2));
+	margin: 0;
+}
+
+.github_icone{
+	height: 25px;
+	width: auto;
+	padding-left: 2em;
+	margin-top: 8px;
+}
+
+#bloc_page_classic article a{
+	color: black;
+	font-size: 19px;
+	text-decoration: none;
+	background: url("images//link.png") no-repeat right top;
+	padding-right: 15px;
+	background-size: 15px;
+}
+
+#bloc_page_classic h2{
+	font-size: 20px;
+	font-weight: bold;
+	padding-left: 20%;
+	padding-right: 20%;
+	margin-top: 10%;
+}
+
+#bloc_page_classic article #list{
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: -50px;
+	font-family: "baskervilleregular", serif;
+	text-align: justify;
+	font-size: 18px;
+	line-height: 2em;
+	padding-bottom: 20px;
+}
+
+.no_indent{
+	text-indent: 0 !important;
+}
+
+.no_padding_bottom{
+	padding-bottom: 0 !important;
+}
+
+.tag{
+	display: flex;
+	align-self: flex-start;
+	flex-wrap: wrap;
+
+}
+
+.tag p{
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	padding-bottom: 0 !important;
+	margin-top: 10px !important;
+	margin-bottom: 10px !important;
+}
+
+.carousel {
+	height: 15cm;
+}	
+
+.slider {
+	width: 100%;
+	position: relative;
+}
+  
+.slider img {
+	max-width: 600px;
+	max-height: 500px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+  	transform: translate(-50%);
+	opacity: 0;
+}
+  
+.slider img:first-child {
+	z-index: 1;
+	opacity: 1;
+}
+  
+.slider img:nth-child(2) {
+	z-index: 0;
+}
+
+.navigation-button {
+	text-align: center;
+	position: relative;
+	line-height: 2em;
+}
+  
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+}
+  
+.active, .dot:hover {
+	background-color: #717171;
+}
