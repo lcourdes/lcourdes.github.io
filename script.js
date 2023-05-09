@@ -31,7 +31,7 @@ function create_list_of_carousel(){
 create_list_of_carousel();
 
 var currentImg = 0; // index of the first image 
-const interval = 5000; // duration(speed) of the slide
+const interval = 7000; // duration(speed) of the slide
 var timer = setInterval(rotateSlide, interval);
 
 function rotateSlide(){
