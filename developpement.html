@@ -7,6 +7,16 @@
 	<title>Léa Courdès - Développement</title>
 </head>
 <body>
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+		  <span class="close">&times;</span>
+		  <h1 id="myModalTitle">test</h1>
+		  <div>
+			<img id="myModalImage">
+		  </div>
+		</div>
+	  
+	  </div>
 <div id="bloc_page_classic">
 	<header id="header_classic">
 		<div id="header_classic_div">
@@ -97,10 +107,12 @@
 							<span class="dot" onclick="changeSlide(3, 'lettings')"></span>
 						</div>
 						<div class="slider">
-							<img src="images//developpement//lettings//migration.png" alt="Exemple de migration">
-							<img src="images//developpement//lettings//workflow.png" alt="Début de la pipeline Github Actions">
-							<img src="images//developpement//lettings//docker_hub.png" alt="Stock d'images dans le Docker Hub">
-							<img src="images//developpement//lettings//aws.png" alt="Console de l'instance EC2 d'AWS">
+							<span class="img_button" onclick="displayImageOnModal('lettings')">
+							<img src="images//developpement//lettings//migration.png" alt="Exemple de migration" title="Exemple de migration permettant de créer de nouvelles tables">
+							<img src="images//developpement//lettings//workflow.png" alt="Début de la pipeline Github Actions" title="Début de la pipeline Github Actions">
+							<img src="images//developpement//lettings//docker_hub.png" alt="Stock d'images dans le Docker Hub" title="Stock d'images dans le Docker Hub">
+							<img src="images//developpement//lettings//aws.png" alt="Console de l'instance EC2 d'AWS" title="Console de l'instance EC2 d'AWS">
+							</span>
 						</div>
 					</div>
 			</div>
@@ -150,11 +162,13 @@
 							<span class="dot" onclick="changeSlide(4, 'crm_securise')"></span>
 						</div>
 						<div class="slider">
-							<img src="images//developpement//crm_securise//diagramme.png" alt="Diagramme du système CRM">
-							<img src="images//developpement//crm_securise//endpoints.png" alt="Extrait du résumé des points de terminaison">
-							<img src="images//developpement//crm_securise//postman.png" alt="Aperçu du projet PostMan">
-							<img src="images//developpement//crm_securise//documentation.png" alt="Extrait de la documentation PostMan">
-							<img src="images//developpement//crm_securise//drf.png" alt="Exemple de page DRF">
+							<span class="img_button" onclick="displayImageOnModal('crm_securise')">
+							<img src="images//developpement//crm_securise//diagramme.png" alt="Diagramme du système CRM" title="Diagramme du système CRM">
+							<img src="images//developpement//crm_securise//endpoints.png" alt="Extrait du résumé des points de terminaison" title="Extrait du résumé des points de terminaison">
+							<img src="images//developpement//crm_securise//postman.png" alt="Aperçu du projet PostMan" title="Aperçu du projet PostMan">
+							<img src="images//developpement//crm_securise//documentation.png" alt="Extrait de la documentation PostMan" title="Extrait de la documentation PostMan">
+							<img src="images//developpement//crm_securise//drf.png" alt="Exemple de page DRF" title="Exemple de page du browsable de Django Rest Framework">
+							</span>
 						</div>
 					</div>
 			</div>
@@ -218,10 +232,12 @@
 							<span class="dot" onclick="changeSlide(3, 'api_securisee')"></span>
 						</div>
 						<div class="slider">
-							<img src="images//developpement//api_securisee//endpoints.png" alt="Extrait du résumé des points de terminaison">
-							<img src="images//developpement//api_securisee//postman.png" alt="Aperçu du projet PostMan">
-							<img src="images//developpement//api_securisee//documentation.png" alt="Extrait de la documentation PostMan">
-							<img src="images//developpement//api_securisee//drf_login.png" alt="Page login de Django Rest">
+							<span class="img_button" onclick="displayImageOnModal('api_securisee')">
+							<img src="images//developpement//api_securisee//endpoints.png" alt="Extrait du résumé des points de terminaison" title="Extrait du résumé des points de terminaison">
+							<img src="images//developpement//api_securisee//postman.png" alt="Aperçu du projet PostMan" title="Aperçu du projet PostMan">
+							<img src="images//developpement//api_securisee//documentation.png" alt="Extrait de la documentation PostMan" title="Extrait de la documentation PostMan">
+							<img src="images//developpement//api_securisee//drf_login.png" alt="Page login de Django Rest" title="Page login de Django Rest">
+							</span>
 						</div>
 					</div>
 			</div>
@@ -256,10 +272,12 @@
 								<span class="dot" onclick="changeSlide(3, 'wireframes_LITReview')"></span>
 							</div>
 							<div class="slider">
-								<img src="images//developpement//LITReview//WF-authentification-accueil.png" alt="">
-								<img src="images//developpement//LITReview//WF-authentification-inscription.png" alt="">
-								<img src="images//developpement//LITReview//WF-flux.png" alt="">
-								<img src="images//developpement//LITReview//WF-flux-critique.png" alt="">
+								<span class="img_button" onclick="displayImageOnModal('wireframes_LITReview')">
+								<img src="images//developpement//LITReview//WF-authentification-accueil.png" alt="Wireframe d'authentification" title="Wireframe d'authentification">
+								<img src="images//developpement//LITReview//WF-authentification-inscription.png" alt="Wireframe d'inscription" title="Wireframe d'inscription">
+								<img src="images//developpement//LITReview//WF-flux.png" alt="Wireframe du flux" title="Wireframe du flux du blog">
+								<img src="images//developpement//LITReview//WF-flux-critique.png" alt="Wireframe de création de critique" title="Wireframe de création de critique">
+								</span>
 							</div>
 						</div>
 						<li>L'interface doit restée propre et minimale.</li>
@@ -289,12 +307,14 @@
 							<span class="dot" onclick="changeSlide(5, 'my_LITReview')"></span>
 						</div>
 						<div class="slider">
-							<img src="images//developpement//LITReview//authentification-accueil.png" alt="">
-							<img src="images//developpement//LITReview//authentification-inscription.png" alt="">
-							<img src="images//developpement//LITReview//flux.png" alt="">
-							<img src="images//developpement//LITReview//posts.png" alt="">
-							<img src="images//developpement//LITReview//flux-critique.png" alt="">
-							<img src="images//developpement//LITReview//flux-critique2.png" alt="">
+							<span class="img_button" onclick="displayImageOnModal('my_LITReview')">
+							<img src="images//developpement//LITReview//authentification-accueil.png" alt="Page d'authentification" title="Page d'authentification">
+							<img src="images//developpement//LITReview//authentification-inscription.png" alt="Page d'inscription" title="Page d'inscription">
+							<img src="images//developpement//LITReview//flux.png" alt="Page de flux du blog" title="Page de flux du blog">
+							<img src="images//developpement//LITReview//posts.png" alt="Page de posts" title="Page des posts personnels">
+							<img src="images//developpement//LITReview//flux-critique.png" alt="Page de création de critique" title="Page de création de critique">
+							<img src="images//developpement//LITReview//flux-critique2.png" alt="Page de création de critique" title="Page de création de critique d'un ticket déjà existant">
+							</span>
 						</div>
 					</div>
 				</p>
@@ -341,10 +361,12 @@
 							<span class="dot" onclick="changeSlide(3, 'streaming')"></span>
 						</div>
 						<div class="slider">
-							<img src="images//developpement//streaming//JustStreamIt_webPage.png" alt="">
-							<img src="images//developpement//streaming//JustStreamIt_modale.png" alt="">
-							<img src="images//developpement//streaming//catégorie_1.png" alt="">
-							<img src="images//developpement//streaming//catégorie_1_to_right.png" alt="">
+							<span class="img_button" onclick="displayImageOnModal('streaming')">
+							<img src="images//developpement//streaming//JustStreamIt_webPage.png" alt="Page d'accueil" title="Page d'accueil du site JustStreamIt">
+							<img src="images//developpement//streaming//JustStreamIt_modale.png" alt="Fenêtre modale" title="Exemple de fenêtre modale">
+							<img src="images//developpement//streaming//catégorie_1.png" alt="Affichage d'une catégorie de films" title="Affichage d'une catégorie de films">
+							<img src="images//developpement//streaming//catégorie_1_to_right.png" alt="Défilement d'une catégorie" title="Défilement vers la droite de la catégorie de films">
+							</span>
 						</div>
 					</div>
 			</div>
@@ -385,11 +407,13 @@
 							<span class="dot" onclick="changeSlide(4, 'testing_img')"></span>
 						</div>
 						<div class="slider">
-							<img src="images//developpement//testing//test_unitaire.png" alt="Extrait des tests unitaires">
-							<img src="images//developpement//testing//fixture.png" alt="Extrait des fixtures de la base de données">
-							<img src="images//developpement//testing//test_couverture.png" alt="Rapport de Coverage">
-							<img src="images//developpement//testing//test_fonctionnel.png" alt="Extrait des tests fonctionnels">
-							<img src="images//developpement//testing//test_performance.png" alt="Rapport de Locust">
+							<span class="img_button" onclick="displayImageOnModal('testing_img')">
+							<img src="images//developpement//testing//test_unitaire.png" alt="Extrait des tests unitaires" title="Extrait des tests unitaires">
+							<img src="images//developpement//testing//fixture.png" alt="Extrait des fixtures de la base de données" title="Extrait des fixtures de la base de données">
+							<img src="images//developpement//testing//test_couverture.png" alt="Rapport de Coverage" title="Rapport de Coverage">
+							<img src="images//developpement//testing//test_fonctionnel.png" alt="Extrait des tests fonctionnels" title="Extrait des tests fonctionnels">
+							<img src="images//developpement//testing//test_performance.png" alt="Rapport de Locust" title="Rapport de Locust">
+							</span>
 						</div>
 					</div>
 			</div>
@@ -432,11 +456,13 @@
 							<span class="dot" onclick="changeSlide(4, 'algorithme_img')"></span>
 						</div>
 						<div class="slider">
-							<img src="images//developpement//algorithme//brute_force_explain.png" alt="Extrait de l'explication de l'algorithme de force brute">
-							<img src="images//developpement//algorithme//brute_force.png" alt="Extrait de l'algorithme de force brute">
-							<img src="images//developpement//algorithme//glouton_explain.png" alt="Extrait de l'explication de l'algorithme glouton">
-							<img src="images//developpement//algorithme//glouton.png" alt="Extrait de l'algorithme glouton">
-							<img src="images//developpement//algorithme//backtesting.png" alt="Rapport de backtesting">
+							<span class="img_button" onclick="displayImageOnModal('algorithme_img')">
+							<img src="images//developpement//algorithme//brute_force_explain.png" alt="Extrait de l'explication de l'algorithme de force brute" title="Extrait de l'explication de l'algorithme de force brute">
+							<img src="images//developpement//algorithme//brute_force.png" alt="Extrait de l'algorithme de force brute" title="Extrait de l'algorithme de force brute">
+							<img src="images//developpement//algorithme//glouton_explain.png" alt="Extrait de l'explication de l'algorithme glouton" title="Extrait de l'explication de l'algorithme glouton">
+							<img src="images//developpement//algorithme//glouton.png" alt="Extrait de l'algorithme glouton" title="Extrait de l'algorithme glouton">
+							<img src="images//developpement//algorithme//backtesting.png" alt="Rapport de backtesting" title="Comparaison de résultats des algorithmes avec ceux d'une collègue">
+							</span>
 						</div>
 					</div>
 			</div>
