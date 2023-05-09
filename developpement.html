@@ -36,6 +36,7 @@
 			<li><a href="#LITReview">Application Django</a></li>
 			<li><a href="#streaming_video">Interface front de streaming</a></li>
 			<li><a href="#testing">Débugger et tester une application</a></li>
+			<li><a href="#algorithme">Résoudre des problèmes en utilisant des algorithmes</a></li>
 		</ul>
 
 	</nav>
@@ -391,6 +392,53 @@
 							<img src="images//developpement//testing//test_couverture.png" alt="Rapport de Coverage">
 							<img src="images//developpement//testing//test_fonctionnel.png" alt="Extrait des tests fonctionnels">
 							<img src="images//developpement//testing//test_performance.png" alt="Rapport de Locust">
+						</div>
+					</div>
+			</div>
+			<div class="anchor" id="algorithme">
+				<h1>Résoudre des problèmes en utilisant des algorithmes en Python</h1>
+				<div class="tag">
+					<p>#Python</p>
+					<p>#KnapsackProblem</p>
+					<p>#AlgorithmeGlouton</p>
+					<p>#ProgrammationDynamique</p>
+					<p>#NotationBig-O</p>
+				</div>
+				<a href="https://github.com/lcourdes/Developpez-des-problemes-en-utilisant-des-algorithmes-en-python"><img class="github_icone" src="images//github.png" alt="Icone Github"/> Lien Github</a><br>
+
+				<p class="no_indent">Description :<br>
+					Le but de ce projet est de concevoir un algorithme qui maximise le profit de clients après deux ans d'investissement dans des actions. L'algorithme doit suggérer une liste des actions les plus rentables.
+					Fondamentalement, il s'agit de développer un algorithme relatif au problème du sac à dos.
+				</p>
+				<p class="no_indent">Exigences :</p>
+					<div id="list">
+					<ul>
+						<li>Développer un algorithme de force brute qui doit tester toutes les différentes combinaisons d'actions avant de proposer le meilleur investissement.</li>
+						<li>Développer un algorithme optimisé qui n'a pas besoin d'explorer toutes les possibilités pour proposer un investissement. Dans le cadre de ce projet, j'ai développé deux algorithmes :</li>
+						<ul>
+							<li>Un algorithme de type glouton qui permet une meilleure optimisation de la mémoire O(N) mais présente une efficacité limité sur un nombre de données important O(N log N).</li>
+							<li>Un algorithme utilisant la programmation dynamique moins efficace en termes de mémoire O(2N x Investissement maximum autorisé) mais plus efficace sur de grands datasets O(N x Investissement maximum autorisé).</li>
+						</ul>
+						<li>Proposer une comparaison des algorithmes en utilisant la notation Big-O.</li>
+						<li>Comparer les résultats obtenus grâce aux algorithmes avec les résultats obtenus par une collègue.</li>
+					</ul>
+					</div>
+				<p class="no_indent">Le détail du fonctionnement des algorithmes est expliqué dans <a href="images//developpement//algorithme//diapositives.pdf">ce document</a>.</p>
+				<p class="no_indent no_padding_bottom">Aperçu :</p>
+					<div id="algorithme_img" class="carousel">
+						<div class="navigation-button">
+							<span class="dot active" onclick="changeSlide(0, 'algorithme_img')"></span>
+							<span class="dot" onclick="changeSlide(1, 'algorithme_img')"></span>
+							<span class="dot" onclick="changeSlide(2, 'algorithme_img')"></span>
+							<span class="dot" onclick="changeSlide(3, 'algorithme_img')"></span>
+							<span class="dot" onclick="changeSlide(4, 'algorithme_img')"></span>
+						</div>
+						<div class="slider">
+							<img src="images//developpement//algorithme//brute_force_explain.png" alt="Extrait de l'explication de l'algorithme de force brute">
+							<img src="images//developpement//algorithme//brute_force.png" alt="Extrait de l'algorithme de force brute">
+							<img src="images//developpement//algorithme//glouton_explain.png" alt="Extrait de l'explication de l'algorithme glouton">
+							<img src="images//developpement//algorithme//glouton.png" alt="Extrait de l'algorithme glouton">
+							<img src="images//developpement//algorithme//backtesting.png" alt="Rapport de backtesting">
 						</div>
 					</div>
 			</div>
